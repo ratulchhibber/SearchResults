@@ -66,7 +66,6 @@ extension MasterViewController: UITableViewDataSource {
     let dataSource = isFiltering ? filteredCandies : candies
     let candy = dataSource[indexPath.row]
     cell.textLabel?.text = candy.name
-    cell.detailTextLabel?.text = candy.category.rawValue
     return cell
   }
 }
