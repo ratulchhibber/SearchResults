@@ -33,10 +33,14 @@ class MasterViewController: UIViewController {
   @IBOutlet var searchFooter: SearchFooter!
   @IBOutlet var searchFooterBottomConstraint: NSLayoutConstraint!
   
-  var candies: [Candy] = []
+  let candies = Candy.candies()
+  var filteredCandies = [Candy]()
+  
+  let searchController = UISearchController(searchResultsController: nil)
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setupSearchController()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -55,8 +59,8 @@ class MasterViewController: UIViewController {
       else {
         return
     }
-    
-    let candy = candies[indexPath.row]
+    let dataSource = isFiltering ? filteredCandies : candies
+    let candy = dataSource[indexPath.row]
     detailViewController.candy = candy
   }
 }
@@ -64,6 +68,9 @@ class MasterViewController: UIViewController {
 extension MasterViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView,
                  numberOfRowsInSection section: Int) -> Int {
+    if isFiltering {
+      return filteredCandies.count
+    }
     return candies.count
   }
   
@@ -71,9 +78,47 @@ extension MasterViewController: UITableViewDataSource {
                  cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
                                              for: indexPath)
-    let candy = candies[indexPath.row]
+    let dataSource = isFiltering ? filteredCandies : candies
+    let candy = dataSource[indexPath.row]
     cell.textLabel?.text = candy.name
     cell.detailTextLabel?.text = candy.category.rawValue
     return cell
+  }
+}
+
+extension MasterViewController {// UISearchController
+  
+  private func setupSearchController() {
+    searchController.searchResultsUpdater = self
+    searchController.obscuresBackgroundDuringPresentation  = false
+    searchController.searchBar.placeholder = "Enter search keyword"
+    navigationItem.searchController = searchController
+    definesPresentationContext = true// This ensures that searchBar does not remain on the viewController if user navigates to another viewController while the UISearchController is active
+  }
+  
+  private var isSearchBarEmpty: Bool {
+    return searchController.searchBar.text?.isEmpty ?? true
+  }
+  
+  private var isFiltering: Bool {
+    return searchController.isActive && !isSearchBarEmpty
+  }
+  
+  func filterContentForSearchText(_ searchText: String,
+                                  category: Candy.Category? = nil) {
+    filteredCandies = candies.filter({
+      return $0.name.lowercased().contains(searchText.lowercased())
+    })
+    tableView.reloadData()
+  }
+}
+
+extension MasterViewController: UISearchResultsUpdating {
+  
+  func updateSearchResults(for searchController: UISearchController) {
+    guard let searchBarText = searchController.searchBar.text else {
+      return
+    }
+    filterContentForSearchText(searchBarText)
   }
 }
