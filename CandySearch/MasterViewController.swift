@@ -30,8 +30,6 @@ import UIKit
 
 class MasterViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
-  @IBOutlet var searchFooter: SearchFooter!
-  @IBOutlet var searchFooterBottomConstraint: NSLayoutConstraint!
   
   let candies = Candy.candies()
   var filteredCandies = [Candy]()
@@ -49,19 +47,6 @@ class MasterViewController: UIViewController {
     if let indexPath = tableView.indexPathForSelectedRow {
       tableView.deselectRow(at: indexPath, animated: true)
     }
-  }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    guard
-      segue.identifier == "ShowDetailSegue",
-      let indexPath = tableView.indexPathForSelectedRow,
-      let detailViewController = segue.destination as? DetailViewController
-      else {
-        return
-    }
-    let dataSource = isFiltering ? filteredCandies : candies
-    let candy = dataSource[indexPath.row]
-    detailViewController.candy = candy
   }
 }
 

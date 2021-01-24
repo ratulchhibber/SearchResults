@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5394F02521864DF5006E754C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5394F02321864DF4006E754C /* LaunchScreen.storyboard */; };
-		A832329622D256E300BD4DD5 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832329122D256E300BD4DD5 /* SearchFooter.swift */; };
-		A832329722D256E300BD4DD5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832329222D256E300BD4DD5 /* DetailViewController.swift */; };
 		A832329822D256E300BD4DD5 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832329322D256E300BD4DD5 /* Candy.swift */; };
 		A832329922D256E300BD4DD5 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832329422D256E300BD4DD5 /* MasterViewController.swift */; };
 		A832329A22D256E300BD4DD5 /* CandyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A832329522D256E300BD4DD5 /* CandyTheme.swift */; };
@@ -21,8 +19,6 @@
 
 /* Begin PBXFileReference section */
 		5394F02421864DF4006E754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A832329122D256E300BD4DD5 /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
-		A832329222D256E300BD4DD5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A832329322D256E300BD4DD5 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 		A832329422D256E300BD4DD5 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		A832329522D256E300BD4DD5 /* CandyTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyTheme.swift; sourceTree = "<group>"; };
@@ -68,9 +64,7 @@
 			children = (
 				A832329322D256E300BD4DD5 /* Candy.swift */,
 				A832329522D256E300BD4DD5 /* CandyTheme.swift */,
-				A832329222D256E300BD4DD5 /* DetailViewController.swift */,
 				A832329422D256E300BD4DD5 /* MasterViewController.swift */,
-				A832329122D256E300BD4DD5 /* SearchFooter.swift */,
 				D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */,
 				D2A5F2071F4A9144005CD714 /* Main.storyboard */,
 				5394F02321864DF4006E754C /* LaunchScreen.storyboard */,
@@ -156,9 +150,7 @@
 			files = (
 				A832329922D256E300BD4DD5 /* MasterViewController.swift in Sources */,
 				A832329A22D256E300BD4DD5 /* CandyTheme.swift in Sources */,
-				A832329722D256E300BD4DD5 /* DetailViewController.swift in Sources */,
 				A832329822D256E300BD4DD5 /* Candy.swift in Sources */,
-				A832329622D256E300BD4DD5 /* SearchFooter.swift in Sources */,
 				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
