@@ -1,44 +1,20 @@
-/// Copyright (c) 2019 Razeware LLC
-///
-/// Permission is hereby granted, free of charge, to any person obtaining a copy
-/// of this software and associated documentation files (the "Software"), to deal
-/// in the Software without restriction, including without limitation the rights
-/// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-/// copies of the Software, and to permit persons to whom the Software is
-/// furnished to do so, subject to the following conditions:
-///
-/// The above copyright notice and this permission notice shall be included in
-/// all copies or substantial portions of the Software.
-///
-/// Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
-/// distribute, sublicense, create a derivative work, and/or sell copies of the
-/// Software in any work that is designed, intended, or marketed for pedagogical or
-/// instructional purposes related to programming, coding, application development,
-/// or information technology.  Permission for such use, copying, modification,
-/// merger, publication, distribution, sublicensing, creation of derivative works,
-/// or sale is expressly withheld.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-/// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-/// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-/// THE SOFTWARE.
-
 import UIKit
+import Alamofire
 
 class MasterViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
   
-  let candies = Candy.candies()
-  var filteredCandies = [Candy]()
+  private var pullControl = UIRefreshControl()
+  let initialResults = SearchResults.initialData()
+  var filteredResults: SearchResults?
   
   let searchController = UISearchController(searchResultsController: nil)
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    title = "Search Results"
     setupSearchController()
+    setupRefreshControl()
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -54,19 +30,41 @@ extension MasterViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView,
                  numberOfRowsInSection section: Int) -> Int {
     if isFiltering {
-      return filteredCandies.count
+      return filteredResults?.items?.count ?? 0
     }
-    return candies.count
+    return initialResults.items?.count ?? 0
   }
   
   func tableView(_ tableView: UITableView,
                  cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
                                              for: indexPath)
-    let dataSource = isFiltering ? filteredCandies : candies
-    let candy = dataSource[indexPath.row]
-    cell.textLabel?.text = candy.name
+    let dataSource = isFiltering ? filteredResults?.items : initialResults.items
+    cell.textLabel?.text = dataSource?[indexPath.row].title
     return cell
+  }
+}
+
+extension MasterViewController {//UIRefreshControl
+  
+  private func setupRefreshControl() {
+  //  pullControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+    pullControl.addTarget(self, action: #selector(refreshListData(_:)), for: .valueChanged)
+    tableView.refreshControl = pullControl
+  }
+  
+  @objc private func refreshListData(_ sender: Any) {
+    filteredResults = initialResults
+    tableView.reloadData()
+    self.pullControl.endRefreshing()
+  }
+}
+
+extension MasterViewController: UISearchBarDelegate {
+  
+  func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//    filteredResults = initialResults
+//    tableView.reloadData()
   }
 }
 
@@ -74,11 +72,13 @@ extension MasterViewController {// UISearchController
   
   private func setupSearchController() {
     searchController.searchResultsUpdater = self
+    searchController.searchBar.delegate = self
     searchController.obscuresBackgroundDuringPresentation  = false
     searchController.searchBar.placeholder = "Enter search keyword"
     navigationItem.searchController = searchController
     definesPresentationContext = true// This ensures that searchBar does not remain on the viewController if user navigates to another viewController while the UISearchController is active
   }
+  
   
   private var isSearchBarEmpty: Bool {
     return searchController.searchBar.text?.isEmpty ?? true
@@ -88,12 +88,18 @@ extension MasterViewController {// UISearchController
     return searchController.isActive && !isSearchBarEmpty
   }
   
-  func filterContentForSearchText(_ searchText: String,
-                                  category: Candy.Category? = nil) {
-    filteredCandies = candies.filter({
-      return $0.name.lowercased().contains(searchText.lowercased())
-    })
-    tableView.reloadData()
+  func filterContentForSearchText(_ searchText: String) {
+    if isSearchBarEmpty { return }
+    
+    //Herein we compare the search string and after 0.5 seconds if the search text remains constant - we assume the user has stopped writing - then we proceed to search forward
+    Debounce<String>.input(searchText, comparedAgainst: self.searchController.searchBar.text ?? "") {_ in
+        self.triggerSearch(for: searchText)
+    }
+    
+//    filteredCandies = candies.filter({
+//      return $0.name.lowercased().contains(searchText.lowercased())
+//    })
+//    tableView.reloadData()
   }
 }
 
@@ -104,5 +110,23 @@ extension MasterViewController: UISearchResultsUpdating {
       return
     }
     filterContentForSearchText(searchBarText)
+  }
+}
+
+extension MasterViewController {
+  
+  func triggerSearch(for keyword: String) {
+    
+    let searchQuery = "https://www.googleapis.com/customsearch/v1?key=\(SearchAPI.key)&cx=\(SearchAPI.cxId)&q=\(keyword)"
+    
+    AF.request(searchQuery).responseDecodable(of: SearchResults.self) { response in
+      switch response.result {
+      case .success(let results):
+        self.filteredResults = results
+        self.tableView.reloadData()
+      case let .failure(error):
+        print(error)
+      }
+    }
   }
 }

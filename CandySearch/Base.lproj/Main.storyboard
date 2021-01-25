@@ -43,14 +43,14 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="UqX-9Y-1fI" style="IBUITableViewCellStyleDefault" id="NMu-cR-gKu">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="UqX-9Y-1fI" style="IBUITableViewCellStyleDefault" id="NMu-cR-gKu">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NMu-cR-gKu" id="4YS-lZ-xcc">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UqX-9Y-1fI">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UqX-9Y-1fI">
                                                     <rect key="frame" x="16" y="0.0" width="343" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -76,22 +76,6 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="tDQ-Zs-CDK">
                         <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="oLz-Vb-Tr5">
-                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Inline-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wia-AW-NAN">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="wia-AW-NAN" secondAttribute="trailing" id="1Gr-DW-Qnj"/>
-                                <constraint firstItem="wia-AW-NAN" firstAttribute="leading" secondItem="oLz-Vb-Tr5" secondAttribute="leading" id="Ano-IL-ZFf"/>
-                                <constraint firstAttribute="bottom" secondItem="wia-AW-NAN" secondAttribute="bottom" id="h7T-7l-tOz"/>
-                                <constraint firstItem="wia-AW-NAN" firstAttribute="top" secondItem="oLz-Vb-Tr5" secondAttribute="top" id="mOa-3J-aRg"/>
-                            </constraints>
-                        </view>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
@@ -105,7 +89,4 @@
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-    <resources>
-        <image name="Inline-Logo" width="300" height="100"/>
-    </resources>
 </document>
