@@ -1,0 +1,499 @@
+{
+  "kind": "customsearch#search",
+  "url": {
+    "type": "application/json",
+    "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+  },
+  "queries": {
+    "request": [{
+      "title": "Google Custom Search - cricket",
+      "totalResults": "8710000",
+      "searchTerms": "cricket",
+      "count": 10,
+      "startIndex": 1,
+      "inputEncoding": "utf8",
+      "outputEncoding": "utf8",
+      "safe": "off",
+      "cx": "c2b18ef33b7134233"
+    }],
+    "nextPage": [{
+      "title": "Google Custom Search - cricket",
+      "totalResults": "8710000",
+      "searchTerms": "cricket",
+      "count": 10,
+      "startIndex": 11,
+      "inputEncoding": "utf8",
+      "outputEncoding": "utf8",
+      "safe": "off",
+      "cx": "c2b18ef33b7134233"
+    }]
+  },
+  "context": {
+    "title": "News"
+  },
+  "searchInformation": {
+    "searchTime": 1.120845,
+    "formattedSearchTime": "1.12",
+    "totalResults": "8710000",
+    "formattedTotalResults": "8,710,000"
+  },
+  "items": [{
+      "kind": "customsearch#result",
+      "title": "'The Masked Dancer' reveals the celebrity hiding under Cricket - CNN",
+      "htmlTitle": "&#39;The Masked Dancer&#39; reveals the celebrity hiding under <b>Cricket</b> - CNN",
+      "link": "https://www.cnn.com/2021/01/21/entertainment/masked-dancer-cricket/index.html",
+      "displayLink": "www.cnn.com",
+      "snippet": "2 days ago ... Singer Brian McKnight was revealed on Wednesday's \"The Masked Dancer\" to \nbe the person who has been performing under the Cricket ...",
+      "htmlSnippet": "2 days ago <b>...</b> Singer Brian McKnight was revealed on Wednesday&#39;s &quot;The Masked Dancer&quot; to <br>\nbe the person who has been performing under the <b>Cricket</b>&nbsp;...",
+      "formattedUrl": "https://www.cnn.com/2021/01/21/entertainment/...cricket/index.html",
+      "htmlFormattedUrl": "https://www.cnn.com/2021/01/21/entertainment/...<b>cricket</b>/index.html",
+      "pagemap": {
+        "thumbnail": [{
+          "src": "https://cdn.cnn.com/cnnnext/dam/assets/210121064416-masked-dancer-cricket-super-tease.jpg"
+        }],
+        "metatags": [{
+          "template-top": "entertainment,art-img",
+          "og:image": "https://cdn.cnn.com/cnnnext/dam/assets/210121064416-masked-dancer-cricket-super-tease.jpg",
+          "twitter:card": "summary_large_image",
+          "og:image:width": "1100",
+          "theme-color": "#000000",
+          "og:site_name": "CNN",
+          "section": "entertainment",
+          "vr:canonical": "https://www.cnn.com/2021/01/21/entertainment/masked-dancer-cricket/index.html",
+          "article:content-tier": "free",
+          "og:description": "Singer Brian McKnight was revealed on Wednesday's \"The Masked Dancer\" to be the person who has been performing under the Cricket costume.",
+          "twitter:image": "https://cdn.cnn.com/cnnnext/dam/assets/210121064416-masked-dancer-cricket-super-tease.jpg",
+          "og:pubdate": "2021-01-21T14:46:42Z",
+          "lastmod": "2021-01-21T18:12:15Z",
+          "pubdate": "2021-01-21T14:46:42Z",
+          "twitter:title": "'The Masked Dancer' reveals the celebrity hiding under Cricket",
+          "og:type": "article",
+          "thumbnail": "https://cdn.cnn.com/cnnnext/dam/assets/210121064416-masked-dancer-cricket-super-tease.jpg",
+          "author": "Marianne Garvey, CNN",
+          "og:title": "'The Masked Dancer' reveals the celebrity hiding under Cricket",
+          "og:image:height": "619",
+          "fb:pages": "5550296508,18793419640",
+          "referrer": "unsafe-url",
+          "fb:app_id": "80401312489",
+          "viewport": "width=device-width, initial-scale=1.0, minimum-scale=1.0",
+          "twitter:description": "Singer Brian McKnight was revealed on Wednesday's \"The Masked Dancer\" to be the person who has been performing under the Cricket costume.",
+          "og:url": "https://www.cnn.com/2021/01/21/entertainment/masked-dancer-cricket/index.html",
+          "article:opinion": "false"
+        }],
+        "cse_image": [{
+          "src": "https://cdn.cnn.com/cnnnext/dam/assets/210121064416-masked-dancer-cricket-super-tease.jpg",
+          "width": "299",
+          "type": "1",
+          "height": "168"
+        }],
+        "newsarticle": [{
+          "image": "https://cdn.cnn.com/cnnnext/dam/assets/210121064416-masked-dancer-cricket-super-tease.jpg",
+          "keywords": "entertainment, 'The Masked Dancer' reveals the celebrity hiding under Cricket - CNN",
+          "author": "Marianne Garvey, CNN",
+          "ispartof": "entertainment",
+          "description": "Singer Brian McKnight was revealed on Wednesday's \"The Masked Dancer\" to be the person who has been performing under the Cricket costume.",
+          "datecreated": "2021-01-21T14:46:42Z",
+          "url": "https://www.cnn.com/2021/01/21/entertainment/masked-dancer-cricket/index.html",
+          "articlebody": "(CNN)Singer Brian McKnight was revealed on Wednesday's \"The Masked Dancer\" to be the person who has been performing under the Cricket costume.After dancing to Montell Jordan's \"This Is How...",
+          "datemodified": "2021-01-21T18:12:15Z",
+          "articlesection": "entertainment",
+          "alternativeheadline": "'The Masked Dancer' reveals the celebrity hiding under Cricket",
+          "headline": "'The Masked Dancer' reveals the celebrity hiding under Cricket - CNN",
+          "datepublished": "2021-01-21T14:46:42Z",
+          "thumbnailurl": "https://cdn.cnn.com/cnnnext/dam/assets/210121064416-masked-dancer-cricket-super-tease.jpg"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "England Cricket Team | BBC Sport",
+      "htmlTitle": "England <b>Cricket</b> Team | BBC Sport",
+      "link": "https://www.bbc.com/sport/cricket/teams/england",
+      "displayLink": "www.bbc.com",
+      "snippet": "The home of England Cricket Team on BBC Sport online. Includes the latest \nnews stories, results, fixtures, video and audio.",
+      "htmlSnippet": "The home of England <b>Cricket</b> Team on BBC Sport online. Includes the latest <br>\nnews stories, results, fixtures, video and audio.",
+      "cacheId": "LlZtHt3deUMJ",
+      "formattedUrl": "https://www.bbc.com/sport/cricket/teams/england",
+      "htmlFormattedUrl": "https://www.bbc.com/sport/<b>cricket</b>/teams/england",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWQciCCJ9JwE53D10Nk_USH4rynfXwXkTw4Yco3MsVMopo-VTn4KQ32Ic",
+          "width": "300",
+          "height": "168"
+        }],
+        "metatags": [{
+          "theme-color": "#FFFFFF",
+          "og:type": "website",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "England Cricket Team | BBC Sport",
+          "og:site_name": "BBC Sport",
+          "twitter:url": "https://www.bbc.co.uk/sport/cricket/teams/england",
+          "og:title": "England Cricket Team | BBC Sport",
+          "og:description": "The home of England Cricket Team on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio.",
+          "twitter:creator": "BBC Sport",
+          "twitter:site": "@bbcsport",
+          "viewport": "width=device-width, initial-scale=1",
+          "twitter:description": "The home of England Cricket Team on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio.",
+          "fb:admins": "100004154058350",
+          "og:url": "https://www.bbc.co.uk/sport/cricket/teams/england"
+        }],
+        "cse_image": [{
+          "src": "https://ichef.bbci.co.uk/live-experience/cps/480/cpsprodpb/6E92/production/_116560382_dan_lawrence_jonny_bairstow_slc2.jpg"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Cricket - BBC Sport",
+      "htmlTitle": "<b>Cricket</b> - BBC Sport",
+      "link": "https://www.bbc.com/sport/cricket",
+      "displayLink": "www.bbc.com",
+      "snippet": "The home of Cricket on BBC Sport online. Includes the latest news stories, results\n, fixtures, video and audio.",
+      "htmlSnippet": "The home of <b>Cricket</b> on BBC Sport online. Includes the latest news stories, results<br>\n, fixtures, video and audio.",
+      "cacheId": "4DqxZh37fDoJ",
+      "formattedUrl": "https://www.bbc.com/sport/cricket",
+      "htmlFormattedUrl": "https://www.bbc.com/sport/<b>cricket</b>",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPkpdRQmXnLMN6ZQ6pE_bdT7g_ot4HZbsLCDxAR5lHq56txu5WR_rOqsyT",
+          "width": "225",
+          "height": "225"
+        }],
+        "metatags": [{
+          "application-name": "BBC Sport",
+          "apple-itunes-app": "app-id=377388936, app-argument=https://www.bbc.com/sport/cricket",
+          "og:image": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.20.13/images/bbc-sport-logo.png",
+          "theme-color": "#ffd230",
+          "og:type": "article",
+          "og:site_name": "BBC Sport",
+          "apple-mobile-web-app-title": "BBC Sport",
+          "og:title": "Cricket - BBC Sport",
+          "msapplication-tileimage": "https://m.files.bbci.co.uk/modules/bbc-morph-sport-page-app-meta/2.1.0/images/web-icons/bbc-sport-144.png",
+          "fb:pages": "1392506827668140,137920769558355,193435954068976,118450564909230,100978706649892,15286229625,21263239760,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739,1033940569952576,857410004307950,624989267645024,1471706783148263,228735667216,317278538359186,958681370814419,260967092113,168895963122035,114010462015043,8251776107,273726292719943,232455204224,1436581493296609,8585725981,8244244903,470911516262605,413132078795966,7519460786,1470145583204829",
+          "og:description": "The home of Cricket on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio.",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og:url": "https://www.bbc.co.uk/sport/cricket"
+        }],
+        "cse_image": [{
+          "src": "https://m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.20.13/images/bbc-sport-logo.png"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Australia Day row: PM Morrison criticises Cricket Australia over ...",
+      "htmlTitle": "Australia Day row: PM Morrison criticises <b>Cricket</b> Australia over ...",
+      "link": "https://www.bbc.com/news/world-australia-55744107",
+      "displayLink": "www.bbc.com",
+      "snippet": "3 days ago ... Australian Prime Minister Scott Morrison has criticised Cricket Australia for \ndumping references to Australia Day, reigniting debate over the ...",
+      "htmlSnippet": "3 days ago <b>...</b> Australian Prime Minister Scott Morrison has criticised <b>Cricket</b> Australia for <br>\ndumping references to Australia Day, reigniting debate over the&nbsp;...",
+      "cacheId": "u66ODanPJ-gJ",
+      "formattedUrl": "https://www.bbc.com/news/world-australia-55744107",
+      "htmlFormattedUrl": "https://www.bbc.com/news/world-australia-55744107",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdA89RyLNBTvz55Hvz4VhagwqxDJkGh1qiOT0AC1vx8SVydLLmpNNOFQ",
+          "width": "150",
+          "height": "84"
+        }],
+        "metatags": [{
+          "og:image": "https://ichef.bbci.co.uk/news/1024/branded_news/151BC/production/_116606468_hi065255044.jpg",
+          "theme-color": "#FFFFFF",
+          "twitter:card": "summary_large_image",
+          "og:site_name": "BBC News",
+          "cleartype": "on",
+          "msapplication-tileimage": "BBC News",
+          "og:description": "Scott Morrison criticises Cricket Australia for dumping references to the controversial holiday.",
+          "twitter:creator": "@BBCWorld",
+          "twitter:image:alt": "Scott Morrison",
+          "twitter:site": "@BBCWorld",
+          "fb:admins": "100004154058350",
+          "application-name": "BBC News",
+          "msapplication-tilecolor": "#bb1919",
+          "article:section": "Australia",
+          "og:image:alt": "Scott Morrison",
+          "og:type": "article",
+          "twitter:title": "Australia Day row: PM Morrison criticises Cricket Australia over words' removal",
+          "twitter:domain": "www.bbc.com",
+          "og:title": "Australia Day row: PM Morrison criticises Cricket Australia over words' removal",
+          "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+          "article:author": "https://www.facebook.com/bbcnews",
+          "twitter:image:src": "https://ichef.bbci.co.uk/news/1024/branded_news/151BC/production/_116606468_hi065255044.jpg",
+          "fb:app_id": "1609039196070050",
+          "viewport": "width=device-width, initial-scale=1",
+          "twitter:description": "Scott Morrison criticises Cricket Australia for dumping references to the controversial holiday.",
+          "og:locale": "en_GB",
+          "mobile-web-app-capable": "yes",
+          "og:url": "https://www.bbc.com/news/world-australia-55744107"
+        }],
+        "cse_image": [{
+          "src": "https://ichef.bbci.co.uk/news/1024/branded_news/151BC/production/_116606468_hi065255044.jpg"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Explaining cricket to Americans",
+      "htmlTitle": "Explaining <b>cricket</b> to Americans",
+      "link": "https://www.cnn.com/2019/07/13/world/cricket-world-cup-what-is-how-american-explained-trnd/index.html",
+      "displayLink": "www.cnn.com",
+      "snippet": "Jul 13, 2019 ... The Cricket World Cup is currently going on in England and Wales, and the \nwhole world is feeling the excitement! Well, almost the whole world.",
+      "htmlSnippet": "Jul 13, 2019 <b>...</b> The <b>Cricket</b> World Cup is currently going on in England and Wales, and the <br>\nwhole world is feeling the excitement! Well, almost the whole world.",
+      "formattedUrl": "https://www.cnn.com/2019/07/13/world/cricket-world.../index.html",
+      "htmlFormattedUrl": "https://www.cnn.com/2019/07/13/world/<b>cricket</b>-world.../index.html",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYxiOmg1ML8yaVPrtCX_C1wznQVuzx8nQwd44rjqhNmgLo7PG4FhrX_s8",
+          "width": "299",
+          "height": "168"
+        }],
+        "metatags": [{
+          "og:image": "https://cdn.cnn.com/cnnnext/dam/assets/190711173254-australia-england-cwc-10-super-169.jpg",
+          "twitter:title": "Explaining cricket, the world's second-most popular sport, to Americans",
+          "twitter:card": "summary_large_image",
+          "article:published_time": "2019-07-13T06:50:28Z",
+          "og:type": "website",
+          "sailthru.tags": "articles, CNN Articles - Explaining cricket to Americans - CNN",
+          "og:site_name": "CNN Digital",
+          "author": "By AJ Willingham, CNN",
+          "og:title": "Explaining cricket, the world's second-most popular sport, to Americans",
+          "meta-section": "world",
+          "type": "Article",
+          "og:description": "The Cricket World Cup is currently going on in England and Wales, and the whole world is feeling the excitement! Well, almost the whole world...",
+          "twitter:image": "https://cdn.cnn.com/cnnnext/dam/assets/190711173254-australia-england-cwc-10-super-169.jpg",
+          "article:publisher": "https://www.facebook.com/cnn",
+          "article:tag": "articles, CNN Articles - Explaining cricket to Americans - CNN",
+          "fb:app_id": "cnn",
+          "twitter:site": "@cnn",
+          "article:modified_time": "2019-07-13T16:15:01Z",
+          "viewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+          "twitter:description": "The Cricket World Cup is currently going on in England and Wales, and the whole world is feeling the excitement! Well, almost the whole world...",
+          "theme": "world",
+          "template_type": "article",
+          "og:url": "https://www.cnn.com/2019/07/13/world/cricket-world-cup-what-is-how-american-explained-trnd/index.html"
+        }],
+        "cse_image": [{
+          "src": "https://cdn.cnn.com/cnnnext/dam/assets/190711173254-australia-england-cwc-10-super-169.jpg"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Scores & Fixtures - Cricket - BBC Sport",
+      "htmlTitle": "Scores &amp; Fixtures - <b>Cricket</b> - BBC Sport",
+      "link": "https://www.bbc.com/sport/cricket/scores-fixtures",
+      "displayLink": "www.bbc.com",
+      "snippet": "All the Cricket fixtures, latest results & live scores for all leagues and competitions \non BBC Sport.",
+      "htmlSnippet": "All the <b>Cricket</b> fixtures, latest results &amp; live scores for all leagues and competitions <br>\non BBC Sport.",
+      "cacheId": "Q_2Td884MNYJ",
+      "formattedUrl": "https://www.bbc.com/sport/cricket/scores-fixtures",
+      "htmlFormattedUrl": "https://www.bbc.com/sport/<b>cricket</b>/scores-fixtures",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPkpdRQmXnLMN6ZQ6pE_bdT7g_ot4HZbsLCDxAR5lHq56txu5WR_rOqsyT",
+          "width": "225",
+          "height": "225"
+        }],
+        "metatags": [{
+          "application-name": "BBC Sport",
+          "apple-itunes-app": "app-id=377388936, app-argument=https://www.bbc.com/sport/cricket/scores-fixtures",
+          "og:image": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.20.13/images/bbc-sport-logo.png",
+          "theme-color": "#ffd230",
+          "og:type": "article",
+          "og:site_name": "BBC Sport",
+          "apple-mobile-web-app-title": "BBC Sport",
+          "og:title": "Scores & Fixtures - Cricket - BBC Sport",
+          "msapplication-tileimage": "https://m.files.bbci.co.uk/modules/bbc-morph-sport-page-app-meta/2.1.0/images/web-icons/bbc-sport-144.png",
+          "fb:pages": "1392506827668140,137920769558355,193435954068976,118450564909230,100978706649892,15286229625,21263239760,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739,1033940569952576,857410004307950,624989267645024,1471706783148263,228735667216,317278538359186,958681370814419,260967092113,168895963122035,114010462015043,8251776107,273726292719943,232455204224,1436581493296609,8585725981,8244244903,470911516262605,413132078795966,7519460786,1470145583204829",
+          "og:description": "All the Cricket fixtures, latest results & live scores for all leagues and competitions on BBC Sport.",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og:url": "https://www.bbc.co.uk/sport/cricket/scores-fixtures"
+        }],
+        "cse_image": [{
+          "src": "https://m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.20.13/images/bbc-sport-logo.png"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "England - Scores & Fixtures - Cricket - BBC Sport",
+      "htmlTitle": "England - Scores &amp; Fixtures - <b>Cricket</b> - BBC Sport",
+      "link": "https://www.bbc.com/sport/cricket/teams/england/scores-fixtures",
+      "displayLink": "www.bbc.com",
+      "snippet": "England scores, results and fixtures on BBC Sport.",
+      "htmlSnippet": "England scores, results and fixtures on BBC Sport.",
+      "cacheId": "h5rlY7zGzdAJ",
+      "formattedUrl": "https://www.bbc.com/sport/cricket/teams/england/scores-fixtures",
+      "htmlFormattedUrl": "https://www.bbc.com/sport/<b>cricket</b>/teams/england/scores-fixtures",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPkpdRQmXnLMN6ZQ6pE_bdT7g_ot4HZbsLCDxAR5lHq56txu5WR_rOqsyT",
+          "width": "225",
+          "height": "225"
+        }],
+        "metatags": [{
+          "application-name": "BBC Sport",
+          "apple-itunes-app": "app-id=377388936, app-argument=https://www.bbc.com/sport/cricket/teams/england/scores-fixtures",
+          "og:image": "https:////m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.20.13/images/bbc-sport-logo.png",
+          "theme-color": "#ffd230",
+          "og:type": "article",
+          "og:site_name": "BBC Sport",
+          "apple-mobile-web-app-title": "BBC Sport",
+          "og:title": "England - Scores & Fixtures - Cricket - BBC Sport",
+          "msapplication-tileimage": "https://m.files.bbci.co.uk/modules/bbc-morph-sport-page-app-meta/2.1.0/images/web-icons/bbc-sport-144.png",
+          "fb:pages": "1392506827668140,137920769558355,193435954068976,118450564909230,100978706649892,15286229625,21263239760,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739,1033940569952576,857410004307950,624989267645024,1471706783148263,228735667216,317278538359186,958681370814419,260967092113,168895963122035,114010462015043,8251776107,273726292719943,232455204224,1436581493296609,8585725981,8244244903,470911516262605,413132078795966,7519460786,1470145583204829",
+          "og:description": "England scores, results and fixtures on BBC Sport.",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og:url": "https://www.bbc.co.uk/sport/cricket/teams/england/scores-fixtures"
+        }],
+        "cse_image": [{
+          "src": "https://m.files.bbci.co.uk/modules/bbc-morph-sport-seo-meta/1.20.13/images/bbc-sport-logo.png"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "A swarm of bees interrupts a Cricket World Cup game",
+      "htmlTitle": "A swarm of bees interrupts a <b>Cricket</b> World Cup game",
+      "link": "https://www.cnn.com/2019/06/28/world/bees-world-cricket-cup-trnd/index.html",
+      "displayLink": "www.cnn.com",
+      "snippet": "Jun 28, 2019 ... From afar, it looked like players were taking a group nap in Durham, England, at \nthe Cricket World Cup match between South Africa and Sri ...",
+      "htmlSnippet": "Jun 28, 2019 <b>...</b> From afar, it looked like players were taking a group nap in Durham, England, at <br>\nthe <b>Cricket</b> World Cup match between South Africa and Sri&nbsp;...",
+      "formattedUrl": "https://www.cnn.com/2019/06/28/world/bees-world-cricket.../index.html",
+      "htmlFormattedUrl": "https://www.cnn.com/2019/06/28/world/bees-world-<b>cricket</b>.../index.html",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG4IOwPCmVl3KNyi8F7Ws0kabTE_Fm-0B0VEHWYAWA2EsqDPb18I8hKJ-t",
+          "width": "299",
+          "height": "168"
+        }],
+        "metatags": [{
+          "og:image": "https://cdn.cnn.com/cnnnext/dam/assets/190628162147-01-bees-cricket-world-cup-super-169.jpg",
+          "twitter:title": "A swarm of bees interrupts a Cricket World Cup match",
+          "twitter:card": "summary_large_image",
+          "article:published_time": "2019-06-28T21:21:52Z",
+          "og:type": "website",
+          "sailthru.tags": "articles, CNN Articles - A swarm of bees interrupts a Cricket World Cup game - CNN",
+          "og:site_name": "CNN Digital",
+          "author": "By Michelle Lou, CNN",
+          "og:title": "A swarm of bees interrupts a Cricket World Cup match",
+          "meta-section": "world",
+          "type": "Article",
+          "og:description": "From afar, it looked like players were taking a group nap in Durham, England, at the Cricket World Cup match between South Africa and Sri Lanka on Friday.",
+          "twitter:image": "https://cdn.cnn.com/cnnnext/dam/assets/190628162147-01-bees-cricket-world-cup-super-169.jpg",
+          "article:publisher": "https://www.facebook.com/cnn",
+          "article:tag": "articles, CNN Articles - A swarm of bees interrupts a Cricket World Cup game - CNN",
+          "fb:app_id": "cnn",
+          "twitter:site": "@cnn",
+          "article:modified_time": "2019-06-28T21:21:52Z",
+          "viewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+          "twitter:description": "From afar, it looked like players were taking a group nap in Durham, England, at the Cricket World Cup match between South Africa and Sri Lanka on Friday.",
+          "theme": "world",
+          "template_type": "article",
+          "og:url": "https://www.cnn.com/2019/06/28/world/bees-world-cricket-cup-trnd/index.html"
+        }],
+        "cse_image": [{
+          "src": "https://cdn.cnn.com/cnnnext/dam/assets/190628162147-01-bees-cricket-world-cup-super-169.jpg"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "India arrests 15 for celebrating Pakistani cricket victory",
+      "htmlTitle": "India arrests 15 for celebrating Pakistani <b>cricket</b> victory",
+      "link": "https://www.cnn.com/2017/06/21/asia/india-arrest-pakistan-cricket/index.html",
+      "displayLink": "www.cnn.com",
+      "snippet": "Jun 21, 2017 ... Fifteen Indian men are facing lengthy jail sentences for allegedly cheering on the \nPakistan cricket team.",
+      "htmlSnippet": "Jun 21, 2017 <b>...</b> Fifteen Indian men are facing lengthy jail sentences for allegedly cheering on the <br>\nPakistan <b>cricket</b> team.",
+      "formattedUrl": "https://www.cnn.com/2017/06/21/asia/india-arrest...cricket/index.html",
+      "htmlFormattedUrl": "https://www.cnn.com/2017/06/21/asia/india-arrest...<b>cricket</b>/index.html",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJu5LVOjezsqhikWJDgFU5IT1Tq4vGEUguydVrBCULLWScUrY9yjR9vP0",
+          "width": "299",
+          "height": "168"
+        }],
+        "metatags": [{
+          "og:image": "https://cdn.cnn.com/cnnnext/dam/assets/170619090748-pakistan-celebrate-super-169.jpg",
+          "twitter:title": "India arrests 15 for celebrating Pakistan cricket victory",
+          "twitter:card": "summary_large_image",
+          "article:published_time": "2017-06-21T10:43:38Z",
+          "og:type": "website",
+          "sailthru.tags": "articles, CNN Articles - India arrests 15 for celebrating Pakistani cricket victory - CNN",
+          "og:site_name": "CNN Digital",
+          "author": "By Manveena Suri, CNN",
+          "og:title": "India arrests 15 for celebrating Pakistan cricket victory",
+          "meta-section": "world - asia",
+          "type": "Article",
+          "og:description": "Fifteen Indian men are facing lengthy jail sentences for allegedly cheering on the Pakistan cricket team.",
+          "twitter:image": "https://cdn.cnn.com/cnnnext/dam/assets/170619090748-pakistan-celebrate-super-169.jpg",
+          "article:publisher": "https://www.facebook.com/cnn",
+          "article:tag": "articles, CNN Articles - India arrests 15 for celebrating Pakistani cricket victory - CNN",
+          "fb:app_id": "cnn",
+          "twitter:site": "@cnn",
+          "article:modified_time": "2017-06-21T10:43:38Z",
+          "viewport": "width=device-width,initial-scale=1,shrink-to-fit=no",
+          "twitter:description": "Fifteen Indian men are facing lengthy jail sentences for allegedly cheering on the Pakistan cricket team.",
+          "theme": "world",
+          "template_type": "article",
+          "og:url": "https://www.cnn.com/2017/06/21/asia/india-arrest-pakistan-cricket/index.html"
+        }],
+        "cse_image": [{
+          "src": "https://cdn.cnn.com/cnnnext/dam/assets/170619090748-pakistan-celebrate-super-169.jpg"
+        }]
+      }
+    },
+    {
+      "kind": "customsearch#result",
+      "title": "Pakistani fans celebrate India's historic cricket win over Australia ...",
+      "htmlTitle": "Pakistani fans celebrate India&#39;s historic <b>cricket</b> win over Australia ...",
+      "link": "https://www.bbc.com/news/world-asia-india-55646454",
+      "displayLink": "www.bbc.com",
+      "snippet": "4 days ago ... Pakistani cricket stars and fans have celebrated India's upset win over Australia \nin a rare instance of bonhomie with their neighbours. · The arch- ...",
+      "htmlSnippet": "4 days ago <b>...</b> Pakistani <b>cricket</b> stars and fans have celebrated India&#39;s upset win over Australia <br>\nin a rare instance of bonhomie with their neighbours. &middot; The arch-&nbsp;...",
+      "cacheId": "x4rQEwkksp8J",
+      "formattedUrl": "https://www.bbc.com/news/world-asia-india-55646454",
+      "htmlFormattedUrl": "https://www.bbc.com/news/world-asia-india-55646454",
+      "pagemap": {
+        "cse_thumbnail": [{
+          "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMkQ6I-dRdWLfSZyKjGP0jbH4CIVVfqEQFOJ78Ut0KIm-8tXNK0d5PE5X1",
+          "width": "300",
+          "height": "168"
+        }],
+        "metatags": [{
+          "og:image": "https://ichef.bbci.co.uk/news/1024/branded_news/16C0B/production/_116559139_mediaitem116559138.jpg",
+          "theme-color": "#FFFFFF",
+          "twitter:card": "summary_large_image",
+          "og:site_name": "BBC News",
+          "cleartype": "on",
+          "msapplication-tileimage": "BBC News",
+          "og:description": "India's unlikely victory over Australia wins praise from neighbouring fans in a rare show of goodwill.",
+          "twitter:creator": "@BBCNews",
+          "twitter:image:alt": "Rishabh Pant (C) of India celebrates with team mates Navdeep Saini (L) and Mohammed Siraj (R) after winning on day five of the fourth Test Match between Australia and India at the Gabba in Brisbane, Australia, 19 January 2021.",
+          "twitter:site": "@BBCNews",
+          "fb:admins": "100004154058350",
+          "application-name": "BBC News",
+          "msapplication-tilecolor": "#bb1919",
+          "article:section": "India",
+          "og:image:alt": "Rishabh Pant (C) of India celebrates with team mates Navdeep Saini (L) and Mohammed Siraj (R) after winning on day five of the fourth Test Match between Australia and India at the Gabba in Brisbane, Australia, 19 January 2021.",
+          "og:type": "article",
+          "twitter:title": "Pakistani fans celebrate India's historic cricket win over Australia",
+          "twitter:domain": "www.bbc.co.uk",
+          "og:title": "Pakistani fans celebrate India's historic cricket win over Australia",
+          "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+          "article:author": "https://www.facebook.com/bbcnews",
+          "twitter:image:src": "https://ichef.bbci.co.uk/news/1024/branded_news/16C0B/production/_116559139_mediaitem116559138.jpg",
+          "fb:app_id": "1609039196070050",
+          "viewport": "width=device-width, initial-scale=1",
+          "twitter:description": "India's unlikely victory over Australia wins praise from neighbouring fans in a rare show of goodwill.",
+          "og:locale": "en_GB",
+          "mobile-web-app-capable": "yes",
+          "og:url": "https://www.bbc.com/news/world-asia-india-55646454"
+        }],
+        "cse_image": [{
+          "src": "https://ichef.bbci.co.uk/news/1024/branded_news/16C0B/production/_116559139_mediaitem116559138.jpg"
+        }]
+      }
+    }
+  ]
+}
