@@ -6,4 +6,4 @@ Objective:
 Note: 
 Replace the keys in Constants.swift with your own google API keys to run this project
 
-![Image of README](https://github.com/ratulchhibber/SearchResults/blob/master/README.png)
+![Image of README](https://github.com/ratulchhibber/SearchResults/blob/main/README.png)
